@@ -6,7 +6,9 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
-    background-image: url("../images/nature-3054445_1920.jpg"); /* https://pixabay.com/en/nature-night-starry-sky-star-plane-3054445/ */
+    background-image: url("../images/starwars_bg.jpg"); 
+    background-size: cover;
+    background-position: center center;
 }
 
 .container {
@@ -18,7 +20,7 @@ body {
 }
 
 #border-header {
-    text-align: center;
+    text-align: left;
     width: 80vw;
     margin: auto;
 }
@@ -27,21 +29,23 @@ body {
     clear: both;
     height: 20px;
     background-color: black;
+
 }
 
 div {
-    text-align: center;
+    text-align: left;
 }
 
-div row {
-    perspective: 1000px;
-    perspective-origin: 10%;
+h1 {
+    font-family: "STARWARS";
+    padding: 0px;
+    font-size: 2em;
+    color: #ffffff;
 }
 
 h2 {
     font-family: "STARWARS";
     padding: 0px;
-    font-size: 5em;
-    color: yellow;
-    transform: rotateX(70deg);
+    font-size: 1em;
+    color: #ffffff;
 }
