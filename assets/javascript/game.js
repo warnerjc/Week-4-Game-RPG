@@ -57,7 +57,7 @@ $(document).ready( function() {
     function startBattle(opponent) {
 
         $(".opp-fighter").stop("click");
-        
+
         document.getElementById(opponent).style.display = "none";
         document.getElementById(opponent.replace("-opp","-bat")).style.display = "inline-block";
 
@@ -79,6 +79,6 @@ $(document).ready( function() {
         startBattle(myOpp);
     })
 
-
+// test git push
 
 });
