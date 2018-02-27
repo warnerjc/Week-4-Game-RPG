@@ -7,6 +7,8 @@
     <title>Star Wars RPG Battle Game</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/starwars-glyphicons.css">
     
@@ -15,29 +17,32 @@
     <header id="border-header"><h1>STAR WARS RPG GAME</h1></header>
 
     <main class="container">
-        <div>
-            <h2>Choose Your Fighter</h1>
+        <div class="row">
+            <div class="col-md">
+                <h2>Choose Your Fighter</h2>
+            </div>
         </div>
-        <div>
-            <span class="swg swg-bobafett  swg-4x swg-inverse swg-fw"></span>
-            <span class="swg swg-kylo swg-4x swg-inverse swg-fw"></span>
-            <span class="swg swg-darthvader-o swg-4x swg-inverse swg-fw"></span>
-            <span class="swg swg-atat-2 swg-4x swg-inverse swg-fw"></span>
-            <span class="swg swg-lukeskywalker swg-4x swg-inverse swg-fw"></span>
+        <div class="row">
+            <div class="col-md">
+                <span class="swg swg-bobafett  swg-4x swg-inverse swg-fw choose-fighter" value="boba"></span>
+                <span class="swg swg-kylo swg-4x swg-inverse swg-fw choose-fighter" value="kylo"></span>
+                <span class="swg swg-darthvader-o swg-4x swg-inverse swg-fw choose-fighter" value="darth"></span>
+                <span class="swg swg-atat-2 swg-4x swg-inverse swg-fw choose-fighter" value="atat"></span>
+                <span class="swg swg-lukeskywalker swg-4x swg-inverse swg-fw choose-fighter" value="luke"></span>
+            </div>
         </div>
-        <div></div>
+    
         <div>
             <h2>Choose Your Opponent</h2>
         </div>
         <div></div>
-        
-
+        <div>
+            <h2>Battle Arena</h2>
+        </div>
 
     </main>
 
-    <footer id="border-footer"></footer>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script ref="assets/javascript/game.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
