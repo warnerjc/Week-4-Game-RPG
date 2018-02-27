@@ -41,9 +41,16 @@ h2 {
     color: #ffffff;
 }
 
-#choose-fighter {
+.choose-fighter {
     height: 25%;
-    margin: 10px;
+}
+
+.swg.opp-fighter {
+    display: none;
+}
+
+.swg.bat-fighter {
+    display: none;
 }
 
 .swg {

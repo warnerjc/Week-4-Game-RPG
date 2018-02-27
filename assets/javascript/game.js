@@ -36,14 +36,48 @@ $(document).ready( function() {
     }
 
     var myFighter = "";
+    var myOpp = "";
 
+    function removeFighters(fighter) {
+
+        $(".chooser-fighter").stop("click");
+
+        var fighters = ["boba", "kylo", "darth", "atat", "luke"];
+
+        for (var i = 0; i < fighters.length; i++) {
+            if ( fighter != fighters[i] ) {
+                console.log("remove fighter: " + fighters[i]);
+                // $(".choose-fighter[value='fighters[i]']").toggle();
+                document.getElementById(fighters[i]).style.display = "none";
+                document.getElementById(fighters[i] + "-opp").style.display = "inline-block";                
+            }
+        }
+    }
+
+    function startBattle(opponent) {
+
+        $(".opp-fighter").stop("click");
+        
+        document.getElementById(opponent).style.display = "none";
+        document.getElementById(opponent.replace("-opp","-bat")).style.display = "inline-block";
+
+        
+    }
 
     $(".choose-fighter").on("click", function () {
-        myFighter = $(this).attr("value");
-        console.log($(this).attr("value"));
+        myFighter = $(this).attr("id");
         console.log(myFighter);
 
+        removeFighters(myFighter);
+
     });
+
+    $(".opp-fighter").on("click", function () {
+        myOpp = $(this).attr("id");
+        console.log(myOpp);
+
+        startBattle(myOpp);
+    })
 
 
 
