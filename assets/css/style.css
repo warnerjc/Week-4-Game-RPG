@@ -56,3 +56,7 @@ h2 {
 .swg {
     margin-top: 10px;
 }
+
+#attack {
+    display: none;
+}
